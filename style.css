@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+body {
+  /* background-color: antiquewhite; */
+  background-image: url("bgbg.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Fira Sans", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  /* background-color: black; */
+
+  /*bottom blur - start*/
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /*bottom blur - end*/
+
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.brand img {
+  width: 54px;
+  padding: 0 8px;
+}
+
+/*to shift Spotify Title to centre*/
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.container {
+  min-height: 65vh;
+  background-color: black;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bgimage.jpg");
+  background-position: center;
+  background-size: 150%;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/*Progress bar*/
+.bottom {
+  position: sticky;
+  height: 100px;
+  /* background-color: black; */
+
+  /*bottom blur - start*/
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /*bottom blur - end*/
+
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 14px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  text-align: center;
+  cursor: pointer;
+}
+.songItemContainer {
+  margin-top: 50px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songItem img {
+  width: 40px;
+  margin: 0 15px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  margin: 0 23px;
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 9.5vw;
+  font-family: "Fira Sans", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
